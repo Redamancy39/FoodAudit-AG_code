@@ -12,6 +12,10 @@ The release supports transparency, error analysis, statistical verification, and
 
 Candidate formulations were generated to cover regulatory mechanisms and then reviewed against GB 2760-2024. The released cases are mechanism-oriented benchmark records. They are not claimed to be a representative sample of commercial products or industrial formulations.
 
+## Public-slice selection
+
+The public release is the 150-record portion held by the releasing author at revision time. Its scope reflects data custody, not post-hoc selection using model correctness or error status. The release preserves one third of each predefined difficulty stratum in the 450-record benchmark: L1, 30/90; L2, 45/135; L3, 60/180; and L4, 15/45. It should not be interpreted as a random or prevalence-representative sample.
+
 ## Contents
 
 Each recipe includes the Chinese input question, anchored category, difficulty and mechanism bucket, additive-level labels, and recipe-level label. Each additive record includes the declared amount, category path, supporting rule category, normalized additive name, maximum amount, unit, remark, and calculation basis where available.
