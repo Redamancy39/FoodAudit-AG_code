@@ -2,7 +2,7 @@
   "freeze_id": "revision-baseline-2026-06-22",
   "created_at": "2026-06-22T16:00:00+08:00",
   "repository": "Redamancy39/FoodAudit-AG_code",
-  "branch": "codex/partial-dataset-release-v1",
+  "branch": "partial-dataset",
   "status": "frozen_revision_baseline",
   "scope": {
     "code": "backend, Streamlit prototype, graph import, candidate generation, evaluation, and statistics scripts",
