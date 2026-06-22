@@ -1,0 +1,20 @@
+{
+  "benchmark_version": "foodaudit-benchmark-450-v1.0.0",
+  "total_recipe_count": 450,
+  "freeze_status": "partial",
+  "slices": [
+    {
+      "slice_id": "public-partial-150",
+      "recipe_count": 150,
+      "release_version": "partial-dataset-v1.0.0",
+      "status": "frozen_and_public",
+      "dataset_manifest": "data/partial_dataset/v1/dataset_manifest.json"
+    },
+    {
+      "slice_id": "coauthor-private-300",
+      "recipe_count": 300,
+      "status": "external_pending_checksum",
+      "note": "Add checksum and immutable location before treating all 450 records as completely frozen."
+    }
+  ]
+}

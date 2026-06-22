@@ -1,0 +1,45 @@
+{
+  "release_version": "partial-dataset-v1.0.0",
+  "full_benchmark_version": "foodaudit-benchmark-450-v1.0.0",
+  "description": "Partial dataset release for transparency and independent verification.",
+  "declared_full_benchmark_recipe_count": 450,
+  "public_partial_recipe_count": 150,
+  "withheld_recipe_count": 300,
+  "public_item_count": 403,
+  "difficulty_counts": {
+    "L1_EASY": 30,
+    "L2_SINGLE": 45,
+    "L3_MIXED": 60,
+    "L4_QS_REVIEW": 15
+  },
+  "bucket_counts": {
+    "Easy-type": 30,
+    "H-type": 58,
+    "N-type": 32,
+    "O-type": 15,
+    "QS-type": 15
+  },
+  "item_label_counts": {
+    "RISK_FORBIDDEN": 54,
+    "RISK_OVERLIMIT": 125,
+    "SAFE": 209,
+    "SAFE_QS": 15
+  },
+  "correction_count": 11,
+  "validation_issue_count": 0,
+  "source_checksums": {
+    "test_final_with_difficulty.xlsx": "e9f937e2be16ffa00ed93fa55072d84837354d19bc289958af83544342f4d593",
+    "allowed_rules.csv": "77f978b9b7b3fad5f79c6e7f17daf1cfd56ccca4143d46d34e13b855cf6ae0bb",
+    "category_nodes.csv": "fc7c3e5c1efe52a80c743f4fbd301dd0f4459aad5b99567367b8e504e6a9e00b",
+    "parent_edges.csv": "e73dc229a5f99c32d1a99447caea22baf3952e6a80ca4202d0d3e36f91d6d18d",
+    "category_synonyms.csv": "3a147e0f5165ece298a17971b9f9277db4e0559d05886f163aea3767a172c60a"
+  },
+  "output_checksums": {
+    "recipes.csv": "cf8c105bf010b55a5dab564cf95321f538883be46ba24c41c377a1f5fe9a8b8a",
+    "items.csv": "77a3057449d54c667c639fca698df8002eec9bf8e94b2f820446939fe17afc70",
+    "correction_log.csv": "74b8e995ab1cb8c920b6aae5d64ac862857c18122cfc450b7400a67158764b4e",
+    "validation_issues.csv": "1141228282d740cfd492f170691410840b52d10eaa5e97d86e1b0942080f04fe",
+    "recipes.jsonl": "11ac66c2dd198025f9b966ae397120dae42f5f10331b5be528d6b5b636915c70"
+  },
+  "remaining_300_status": "maintained by a co-author; not included in this repository"
+}

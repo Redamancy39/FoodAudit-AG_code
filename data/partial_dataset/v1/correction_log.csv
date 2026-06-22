@@ -1,0 +1,12 @@
+﻿sample_id,field,old_value,new_value,reason
+7,item_gold,三氯蔗糖: RISK_FORBIDDEN,三氯蔗糖: SAFE,ancestor rule 12.10 permits 0.25 g/kg; declared amount is 0.1 g/kg
+38,food_category,调制炼乳(包括加糖炼乳及使用了非乳原料的调制炼乳等),干酪类似品 (01.06.05),corrected: question specifies cheese analogue
+44,item_gold,纽甜: SAFE,纽甜: RISK_OVERLIMIT,04.02.02.03 limit is 0.01 g/kg; declared amount is 0.03 g/kg
+45,food_category,其他蛋制品,蛋黄酱、沙拉酱 (12.10.02.01),corrected: question specifies mayonnaise
+55,food_category,"即食谷物,包括碾轧燕麦(片)",谷类和淀粉类甜品(如米布丁、木薯布丁) (06.09),corrected: tapioca pudding is a cereal/starch dessert
+63,question_zh,核查以下白兰地配方是否符合 GB2760：紫胶(又名虫胶) 0.1g/kg、焦糖色(亚硫酸铵法) 30.0g/L、焦糖色(苛性硫酸盐法) 8g/kg。,核查以下白兰地配方是否符合 GB2760：紫胶(又名虫胶) 0.1g/kg、焦糖色(亚硫酸铵法) 30.0g/L、焦糖色(苛性硫酸盐法) 8g/L。,corrected denominator to match the applicable g/L rule
+65,item_gold,阿斯巴甜: RISK_OVERLIMIT,阿斯巴甜: SAFE,12.10.02 limit is 2 g/kg; declared amount is 1.5 g/kg
+65,item_gold,番茄红: SAFE,番茄红: RISK_OVERLIMIT,12.10.02 limit is 0.04 g/kg; declared amount is 0.15 g/kg
+85,item_gold,抗坏血酸: RISK_OVERLIMIT,抗坏血酸钙: RISK_OVERLIMIT,item name corrected to match the question
+86,question_zh,核查以下配方是否符合 GB2760：二氧化硫及亚硫酸盐 0.02g/L、海藻酸丙二醇酯 0.2g/kg、几丁质 0.3g/kg，适用于啤酒。,核查以下配方是否符合 GB2760：二氧化硫及亚硫酸盐 0.02g/kg、海藻酸丙二醇酯 0.2g/kg、几丁质 0.3g/kg，适用于啤酒。,corrected denominator to match the applicable g/kg rule
+91,item_gold,番茄红素: SAFE,番茄红素: RISK_FORBIDDEN,no path-valid authorization for 12.10.01.02

@@ -1,0 +1,224 @@
+{
+  "freeze_id": "revision-baseline-2026-06-22",
+  "created_at": "2026-06-22T16:00:00+08:00",
+  "repository": "Redamancy39/FoodAudit-AG_code",
+  "branch": "partial-dataset",
+  "status": "frozen_revision_baseline",
+  "scope": {
+    "code": "backend, Streamlit prototype, graph import, candidate generation, evaluation, and statistics scripts",
+    "public_dataset": {
+      "version": "partial-dataset-v1.0.0",
+      "recipes": 150,
+      "item_judgments": 403,
+      "status": "frozen_and_public"
+    },
+    "full_benchmark": {
+      "version": "foodaudit-benchmark-450-v1.0.0",
+      "recipes": 450,
+      "status": "partial_freeze",
+      "note": "The co-author-held 300-record slice is not included and has no checksum in this freeze."
+    },
+    "knowledge_graph_source_snapshot": {
+      "category_nodes": 369,
+      "permission_rule_rows": 2300,
+      "parent_edges": 353,
+      "category_synonyms": 1328
+    },
+    "live_neo4j_inspection_at_freeze": {
+      "FoodCategory_nodes": 374,
+      "Additive_nodes": 282,
+      "Synonym_nodes": 1210,
+      "ALLOWED_IN_relationships": 2277,
+      "PARENT_OF_relationships": 353,
+      "ALIASED_AS_relationships": 1328
+    }
+  },
+  "provenance": {
+    "source_workbook_name": "test_final_with_difficulty.xlsx",
+    "source_workbook_sha256": "e9f937e2be16ffa00ed93fa55072d84837354d19bc289958af83544342f4d593",
+    "source_workbook_published": false,
+    "release_builder": "scripts/build_partial_dataset.py"
+  },
+  "validation": {
+    "release_builder_issue_count": 0,
+    "manual_correction_log_rows": 11,
+    "credentials_committed": false,
+    "pii_pattern_hits": 0,
+    "python_syntax_check": "passed"
+  },
+  "known_version_gap": "The frozen source has 2,300 permission-rule rows while the inspected live Neo4j graph has 2,277 ALLOWED_IN relationships. Resolve this before rerunning final manuscript metrics.",
+  "manuscript_metrics_status": "must_be_rerun_after_major_revision_changes",
+  "file_count_excluding_this_manifest": 34,
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "97db0aff0b221276c879add1d47840877b724e4973b91d4d1d85dc42f1e79dc4",
+      "bytes": 260
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+      "bytes": 66
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "e7600ef427e2a383a5425ada4f9431dd6c707d4f7a4b730a3331d64ba23c9449",
+      "bytes": 3910
+    },
+    {
+      "path": "DATA_CARD.md",
+      "sha256": "b85a570ff3e124d2fc442bed356946bf633e9a6c0289de958e43cd7fe3ff2730",
+      "bytes": 1679
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "b7dede4a3816d0b46a2068739895886d76d3b01d445022b246dbc23d79e07355",
+      "bytes": 1088
+    },
+    {
+      "path": "README.md",
+      "sha256": "0e29bfa7be02b4b4932350fd377927ba1106580058e8435b721392ae427ac651",
+      "bytes": 1970
+    },
+    {
+      "path": "app/streamlit_app.py",
+      "sha256": "3a881bde9199e1bc19fd84ad1adfd4298b57519880ec792f635474c2d4b49826",
+      "bytes": 10313
+    },
+    {
+      "path": "data/partial_dataset/v1/README.md",
+      "sha256": "ba5b188657ad58b40eae57fdbe9ca92f5e238313f7907b6538c31ecc5e7d5bf4",
+      "bytes": 765
+    },
+    {
+      "path": "data/partial_dataset/v1/correction_log.csv",
+      "sha256": "74b8e995ab1cb8c920b6aae5d64ac862857c18122cfc450b7400a67158764b4e",
+      "bytes": 1942
+    },
+    {
+      "path": "data/partial_dataset/v1/dataset_manifest.json",
+      "sha256": "a7ccb536351156044ceaa53b8e299d8a9a18e53f61dababc84d2d105363ad81d",
+      "bytes": 1879
+    },
+    {
+      "path": "data/partial_dataset/v1/full_benchmark_manifest.json",
+      "sha256": "58b34e916dc8b86d4aa330f3c49a15561331672411f4cb600244d25543bb7008",
+      "bytes": 632
+    },
+    {
+      "path": "data/partial_dataset/v1/items.csv",
+      "sha256": "77a3057449d54c667c639fca698df8002eec9bf8e94b2f820446939fe17afc70",
+      "bytes": 168792
+    },
+    {
+      "path": "data/partial_dataset/v1/recipes.csv",
+      "sha256": "cf8c105bf010b55a5dab564cf95321f538883be46ba24c41c377a1f5fe9a8b8a",
+      "bytes": 55851
+    },
+    {
+      "path": "data/partial_dataset/v1/recipes.jsonl",
+      "sha256": "11ac66c2dd198025f9b966ae397120dae42f5f10331b5be528d6b5b636915c70",
+      "bytes": 442513
+    },
+    {
+      "path": "data/partial_dataset/v1/validation_issues.csv",
+      "sha256": "1141228282d740cfd492f170691410840b52d10eaa5e97d86e1b0942080f04fe",
+      "bytes": 26
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "221603838da716fad1680e483eb2f7a3d9cb640e1972d81a9294849a6c46bbf7",
+      "bytes": 178
+    },
+    {
+      "path": "resources/kg_snapshot/v1/GB2760_Category_Tree.jsonl",
+      "sha256": "b928b6a11f7f145cd0ff23c175bd58fbe30c7964ad726fd6cf5257af71ed3772",
+      "bytes": 58612
+    },
+    {
+      "path": "resources/kg_snapshot/v1/GB2760_Manual_Calibrated_V3.jsonl",
+      "sha256": "85ae8fbb3f2b9151fb6eaf51a0bd6920019567ec423b213f9f94a04ee9d2cacc",
+      "bytes": 915570
+    },
+    {
+      "path": "resources/kg_snapshot/v1/GB2760_Synonyms.jsonl",
+      "sha256": "b828bf043814a19678cf40acba50f73f37460cdb8d8f1ae780e74f0e1be0c56c",
+      "bytes": 149541
+    },
+    {
+      "path": "resources/kg_snapshot/v1/README.md",
+      "sha256": "237c13f92317f01da72ec7e600e031ced0f5509d80a42a5cab2b69aa5d9cae11",
+      "bytes": 1027
+    },
+    {
+      "path": "resources/kg_snapshot/v1/allowed_rules.csv",
+      "sha256": "77f978b9b7b3fad5f79c6e7f17daf1cfd56ccca4143d46d34e13b855cf6ae0bb",
+      "bytes": 256808
+    },
+    {
+      "path": "resources/kg_snapshot/v1/category_nodes.csv",
+      "sha256": "fc7c3e5c1efe52a80c743f4fbd301dd0f4459aad5b99567367b8e504e6a9e00b",
+      "bytes": 12302
+    },
+    {
+      "path": "resources/kg_snapshot/v1/category_synonyms.csv",
+      "sha256": "3a147e0f5165ece298a17971b9f9277db4e0559d05886f163aea3767a172c60a",
+      "bytes": 60699
+    },
+    {
+      "path": "resources/kg_snapshot/v1/parent_edges.csv",
+      "sha256": "e73dc229a5f99c32d1a99447caea22baf3952e6a80ca4202d0d3e36f91d6d18d",
+      "bytes": 14274
+    },
+    {
+      "path": "scripts/build_partial_dataset.py",
+      "sha256": "99ec10cc9d1d1b29b9fc528e6a7495ce1d8f65221bc6b1ebf68de8db3badc1b1",
+      "bytes": 15791
+    },
+    {
+      "path": "scripts/evaluate_ablations.py",
+      "sha256": "2f76c6f920351e8d8065c80c523ff7a24ee298abccc2bce77b84bf606e8b3c2b",
+      "bytes": 34380
+    },
+    {
+      "path": "scripts/evaluate_baselines.py",
+      "sha256": "b3c7f24ed51d3cba6a57d08a165e7f6e34eeb73f69ea1064c77c248c9db87c19",
+      "bytes": 27647
+    },
+    {
+      "path": "scripts/evaluate_foodaudit.py",
+      "sha256": "6ee35b24e239f4a755f427efe119d52b0d82d0227e8d825a6b8b1ca1ab12e1b8",
+      "bytes": 18684
+    },
+    {
+      "path": "scripts/evaluate_retrieval_baselines.py",
+      "sha256": "92f991791e7ca313599a2ddd535fbe9addfe690a5e18af7fed44d4f28c8a3a5e",
+      "bytes": 41168
+    },
+    {
+      "path": "scripts/generate_benchmark_candidates.py",
+      "sha256": "744c648cd0b408db40f983491727b6968c52c35ae1631741c0d658132bbcc2fd",
+      "bytes": 34835
+    },
+    {
+      "path": "scripts/import_neo4j.py",
+      "sha256": "1bc80bcc24d64d0d760c92023b4613ecb16feeaad2a00f8c59d771143d7eeef2",
+      "bytes": 9192
+    },
+    {
+      "path": "scripts/statistical_analysis.py",
+      "sha256": "40f2ca34158441e77163959e4fef7d1a496570a6fee884e0cc61a6cd1851427d",
+      "bytes": 9220
+    },
+    {
+      "path": "scripts/summarize_results.py",
+      "sha256": "6f1cfb2e430bac4cbcf1fb2e4d686b692517060eae78eedc5afabc00fcd81942",
+      "bytes": 15724
+    },
+    {
+      "path": "src/foodaudit_backend.py",
+      "sha256": "86ad9ca7a79e5d25fa74a8cffdb31d595530e3237e0a289090d3d777c27ef048",
+      "bytes": 17600
+    }
+  ]
+}
