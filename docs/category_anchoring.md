@@ -22,7 +22,3 @@ No explicit secondary rule is applied to exact cosine-score ties: tied entries r
 ## Evaluation-harness distinction
 
 The ablation evaluator includes a vector-Top-1 fallback when the reranker output is invalid or the call fails. That fallback is specific to the ablation harness. The production backend used by `evaluate_foodaudit.py` returns a mapping failure instead and generated the reported FoodAudit-AG backend results.
-
-## Public-subset diagnostic
-
-On the released 150-recipe subset, 127 predicted category names matched the adjudicated anchor under normalized bidirectional name matching: accuracy 0.8467, Wilson 95% CI [0.7804, 0.8956]. This is a public-subset diagnostic, not a full-benchmark anchor estimate; the reported full-benchmark recipe-level accuracy remains 0.9533.
