@@ -23,6 +23,7 @@ See data/partial_dataset/v1/README.md and DATA_CARD.md.
 - src/: FoodAudit-AG backend snapshot used as the revision baseline.
 - app/: review-oriented Streamlit prototype.
 - scripts/: graph import, candidate generation, evaluation, statistics, and release builders.
+- docs/category_anchoring.md: exact candidate-generation, ranking, threshold, output-resolution, and failure-handling specification.
 - CODE_FREEZE.json: checksums for the revision-baseline code and resources.
 
 ## Release status
