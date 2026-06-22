@@ -10,6 +10,10 @@ FoodAudit-AG is an auditable workflow for food-additive compliance-state assessm
 
 The public release contains 150 recipe-level records and 403 additive-level judgments with labels, category paths, and regulatory evidence fields. The remaining 300 records are maintained by a co-author and are not included in this repository.
 
+### Public-slice selection
+
+The released slice is the 150-record portion held by the releasing author at revision time; its scope was determined by data custody rather than by post-hoc model performance. It preserves one third of every predefined difficulty stratum in the full benchmark: L1, 30 of 90; L2, 45 of 135; L3, 60 of 180; and L4, 15 of 45. The slice is intended for transparency and mechanism-level verification and is not claimed to be a random or commercially representative sample.
+
 See data/partial_dataset/v1/README.md and DATA_CARD.md.
 
 ## Repository structure
