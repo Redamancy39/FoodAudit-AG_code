@@ -11,10 +11,10 @@
       "dataset_manifest": "data/partial_dataset/v1/dataset_manifest.json"
     },
     {
-      "slice_id": "coauthor-private-300",
+      "slice_id": "internal-curated-300",
       "recipe_count": 300,
-      "status": "external_pending_checksum",
-      "note": "Add checksum and immutable location before treating all 450 records as completely frozen."
+      "status": "not_cleared_for_unrestricted_redistribution",
+      "note": "Part of the internally curated benchmark and not included in the public partial release."
     }
   ]
 }

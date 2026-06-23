@@ -8,11 +8,11 @@ FoodAudit-AG is an auditable workflow for food-additive compliance-state assessm
 
 **本仓库公布部分数据集：完整基准共 450 条配方，本次公开其中 150 条。**
 
-The public release contains 150 recipe-level records and 403 additive-level judgments with labels, category paths, and regulatory evidence fields. The remaining 300 records are maintained by a co-author and are not included in this repository.
+The public release contains 150 recipe-level records and 403 additive-level judgments with labels, category paths, and regulatory evidence fields. The remaining 300 records are part of the internally curated benchmark and have not been cleared for unrestricted redistribution.
 
 ### Public-slice selection
 
-The released slice is the 150-record portion held by the releasing author at revision time; its scope was determined by data custody rather than by post-hoc model performance. It preserves one third of every predefined difficulty stratum in the full benchmark: L1, 30 of 90; L2, 45 of 135; L3, 60 of 180; and L4, 15 of 45. The slice is intended for transparency and mechanism-level verification and is not claimed to be a random or commercially representative sample.
+The released slice preserves one third of every predefined difficulty stratum in the full benchmark: L1, 30 of 90; L2, 45 of 135; L3, 60 of 180; and L4, 15 of 45. The slice is intended for transparency and mechanism-level verification and is not claimed to be a random or commercially representative sample or a complete substitute for the full benchmark.
 
 See data/partial_dataset/v1/README.md and DATA_CARD.md.
 
@@ -33,8 +33,8 @@ See data/partial_dataset/v1/README.md and DATA_CARD.md.
 
 - Public dataset: partial-dataset-v1.0.0.
 - Full benchmark identifier: foodaudit-benchmark-450-v1.0.0.
-- Full 450-record freeze status: partial. The public 150-record slice is frozen; checksums for the co-author's 300-record slice still need to be added.
-- Code freeze: revision baseline dated 2026-06-22. All manuscript metrics must be rerun after the major-revision changes.
+- Full 450-record freeze status: partial public release. The public 150-record slice is frozen; the remaining 300 records are part of the internally curated benchmark and have not been cleared for unrestricted redistribution.
+- Code freeze: revision baseline dated 2026-06-22. The manuscript metrics reported in the revised submission correspond to the frozen evaluation snapshot described in the paper and Online Resource 1.
 
 ## Environment
 

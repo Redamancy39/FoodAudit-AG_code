@@ -14,7 +14,7 @@ Candidate formulations were generated to cover regulatory mechanisms and then re
 
 ## Public-slice selection
 
-The public release is the 150-record portion held by the releasing author at revision time. Its scope reflects data custody, not post-hoc selection using model correctness or error status. The release preserves one third of each predefined difficulty stratum in the 450-record benchmark: L1, 30/90; L2, 45/135; L3, 60/180; and L4, 15/45. It should not be interpreted as a random or prevalence-representative sample.
+The public release preserves one third of each predefined difficulty stratum in the 450-record benchmark: L1, 30/90; L2, 45/135; L3, 60/180; and L4, 15/45. It should not be interpreted as a random or prevalence-representative sample or a complete substitute for the full benchmark.
 
 ## Contents
 
@@ -31,6 +31,6 @@ The released fields contain no names, contact details, account identifiers, or e
 ## Limitations
 
 - Only 150 of 450 records are public.
-- The remaining 300 records are maintained by a co-author.
+- The remaining 300 records are part of the internally curated benchmark and have not been cleared for unrestricted redistribution.
 - The benchmark is mechanism-oriented and should not be used to estimate real-world prevalence.
 - GB 2760 interpretations should be reviewed by qualified regulatory personnel.

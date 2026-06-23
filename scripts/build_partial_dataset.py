@@ -225,13 +225,13 @@ def main():
       "item_label_counts":idf.gold_label.value_counts().sort_index().to_dict(),"correction_count":len(fdf),
       "validation_issue_count":len(qdf),"source_checksums":{p.name:sha(p) for p in source_files},
       "output_checksums":{n:sha(p) for n,p in files.items()},
-      "remaining_300_status":"maintained by a co-author; not included in this repository"}
+      "remaining_300_status":"part of the internally curated benchmark; not cleared for unrestricted redistribution"}
     (out/"dataset_manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     full={"benchmark_version":FULL,"total_recipe_count":450,"freeze_status":"partial","slices":[
       {"slice_id":"public-partial-150","recipe_count":150,"release_version":RELEASE,"status":"frozen_and_public",
        "dataset_manifest":"data/partial_dataset/v1/dataset_manifest.json"},
-      {"slice_id":"coauthor-private-300","recipe_count":300,"status":"external_pending_checksum",
-       "note":"Add checksum and immutable location before treating all 450 records as completely frozen."}]}
+      {"slice_id":"internal-curated-300","recipe_count":300,"status":"not_cleared_for_unrestricted_redistribution",
+       "note":"Part of the internally curated benchmark and not included in the public partial release."}]}
     (out/"full_benchmark_manifest.json").write_text(json.dumps(full,indent=2)+"\n",encoding="utf-8")
     readme="""# Partial dataset release
 
@@ -239,7 +239,7 @@ This directory publishes a partial dataset from the FoodAudit-AG benchmark.
 
 - Full benchmark described in the manuscript: 450 recipes.
 - Publicly released here: 150 recipes.
-- Remaining 300 recipes: maintained by a co-author and not included here.
+- Remaining 300 recipes: part of the internally curated benchmark and not cleared for unrestricted redistribution.
 - Regulatory reference: GB 2760-2024.
 - Release version: partial-dataset-v1.0.0.
 

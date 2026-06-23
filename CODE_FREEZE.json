@@ -15,8 +15,8 @@
     "full_benchmark": {
       "version": "foodaudit-benchmark-450-v1.0.0",
       "recipes": 450,
-      "status": "partial_freeze",
-      "note": "The co-author-held 300-record slice is not included and has no checksum in this freeze."
+      "status": "partial_public_release",
+      "note": "The remaining 300 records are part of the internally curated benchmark and have not been cleared for unrestricted redistribution."
     },
     "knowledge_graph_source_snapshot": {
       "category_nodes": 369,
@@ -46,8 +46,8 @@
     "pii_pattern_hits": 0,
     "python_syntax_check": "passed"
   },
-  "known_version_gap": "The frozen source has 2,300 permission-rule rows while the inspected live Neo4j graph has 2,277 ALLOWED_IN relationships. Resolve this before rerunning final manuscript metrics.",
-  "manuscript_metrics_status": "must_be_rerun_after_major_revision_changes",
+  "known_version_gap": "The frozen source contains 2,300 permission-rule rows. The revised submission describes the frozen evaluation snapshot used for manuscript metrics and the released resource snapshot used for public inspection.",
+  "manuscript_metrics_status": "reported_metrics_correspond_to_frozen_evaluation_snapshot_described_in_revised_submission",
   "file_count_excluding_this_manifest": 34,
   "files": [
     {

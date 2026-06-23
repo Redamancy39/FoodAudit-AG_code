@@ -41,5 +41,5 @@
     "validation_issues.csv": "1141228282d740cfd492f170691410840b52d10eaa5e97d86e1b0942080f04fe",
     "recipes.jsonl": "11ac66c2dd198025f9b966ae397120dae42f5f10331b5be528d6b5b636915c70"
   },
-  "remaining_300_status": "maintained by a co-author; not included in this repository"
+  "remaining_300_status": "part of the internally curated benchmark; not cleared for unrestricted redistribution"
 }
