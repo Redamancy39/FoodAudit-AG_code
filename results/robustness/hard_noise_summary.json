@@ -1,0 +1,41 @@
+{
+  "run_name": "foodaudit_ag_hard_noise_30",
+  "scope": "30-case hard-noise diagnostic subset derived from the public partial dataset",
+  "recipe_level": {
+    "n": 30,
+    "fine_acc": 0.8333333333333334,
+    "binary_acc": 0.8333333333333334,
+    "avg_latency": 13.418148676554361
+  },
+  "recipe_level_ci95": [
+    0.6999722251151381,
+    0.9666944415515286
+  ],
+  "item_level": {
+    "n": 60,
+    "fine_acc": 0.8666666666666667,
+    "binary_acc": 0.9166666666666666
+  },
+  "binary_risk_state": {
+    "precision": 0.7083333333333334,
+    "recall": 1.0,
+    "f1": 0.8292682926829268,
+    "tp": 17,
+    "fp": 7,
+    "fn": 0
+  },
+  "anchor_stats": {
+    "n": 30,
+    "acc": 0.6666666666666666
+  },
+  "false_safe_recipe": {
+    "count": 0,
+    "rate": 0.0
+  },
+  "binary_confusion_recipe": {
+    "SAFE->SAFE": 6,
+    "SAFE->RISK": 7,
+    "RISK->SAFE": 0,
+    "RISK->RISK": 17
+  }
+}

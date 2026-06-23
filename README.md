@@ -19,11 +19,14 @@ See data/partial_dataset/v1/README.md and DATA_CARD.md.
 ## Repository structure
 
 - data/partial_dataset/v1/: public partial dataset in CSV and JSONL formats.
+- data/partial_dataset/v1/hard_noise_probe_30.csv: 30-case hard-noise diagnostic subset derived from the public partial dataset.
+- results/robustness/: aggregate hard-noise robustness results.
 - resources/kg_snapshot/v1/: frozen category tree, permission rules, and category synonyms.
 - src/: FoodAudit-AG backend snapshot used as the revision baseline.
 - app/: review-oriented Streamlit prototype.
 - scripts/: graph import, candidate generation, evaluation, statistics, and release builders.
 - docs/category_anchoring.md: exact candidate-generation, ranking, threshold, output-resolution, and failure-handling specification.
+- docs/robustness_hard_noise.md: hard-noise perturbation construction and summary results.
 - CODE_FREEZE.json: checksums for the revision-baseline code and resources.
 
 ## Release status

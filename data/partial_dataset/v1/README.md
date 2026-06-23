@@ -13,3 +13,5 @@ The released slice is the 150-record portion held by the releasing author at rev
 The release supports transparency and independent verification. These mechanism-oriented benchmark cases were initialized from generated candidates and manually reviewed. They are not presented as representative commercial or industrial formulations.
 
 Files: recipes.csv, items.csv, recipes.jsonl, correction_log.csv, validation_issues.csv, dataset_manifest.json, full_benchmark_manifest.json.
+
+Additional diagnostic file: hard_noise_probe_30.csv contains 30 perturbed inputs derived from the public partial dataset for robustness inspection under incomplete labels, ambiguous commercial names, compound foods, multilingual synonyms, and missing quantity units. Aggregate results are provided under results/robustness/.
