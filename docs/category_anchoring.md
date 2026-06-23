@@ -13,7 +13,7 @@ The system does not use a Neo4j vector index. It does not apply a minimum simila
 
 ## Semantic selection
 
-The ordered candidates are formatted as `<name> (Code: <code>)` and supplied to Qwen3-Max with temperature 0.1. The prompt asks the model to select one candidate, normalize commercial wording to a product type, and use the nearest reasonable parent when no exact category exists.
+The ordered candidates are formatted as `<name> (Code: <code>)` and supplied to Qwen3-Max in non-thinking mode with temperature 0.1. The prompt asks the model to select one candidate, normalize commercial wording to a product type, and use the nearest reasonable parent when no exact category exists.
 
 The returned `target_code` is resolved first against the standardized category table. Exact `target_name` matching is used only if the code does not resolve, because category names are not guaranteed to be unique. If neither field resolves, the production backend reports a mapping failure.
 

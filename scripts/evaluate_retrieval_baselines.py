@@ -219,6 +219,7 @@ def extract_structured_data_llm(client: OpenAI, text: str) -> Optional[dict]:
             model=MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             temperature=TEMPERATURE,
+            extra_body={"enable_thinking": False},
         )
         return robust_json(res.choices[0].message.content)
     except Exception:
@@ -637,6 +638,7 @@ Evidence:
             model=MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             temperature=TEMPERATURE,
+            extra_body={"enable_thinking": False},
         )
         obj = robust_json(res.choices[0].message.content) or {}
         label = normalize_pred_status(obj.get("label", "RISK_FORBIDDEN"))
@@ -677,6 +679,7 @@ Path-aware evidence:
             model=MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             temperature=TEMPERATURE,
+            extra_body={"enable_thinking": False},
         )
         obj = robust_json(res.choices[0].message.content) or {}
         label = normalize_pred_status(obj.get("label", "RISK_FORBIDDEN"))

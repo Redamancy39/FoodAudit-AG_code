@@ -280,6 +280,7 @@ class GB2760Service:
                 model=API_CONFIG["model"],
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
+                extra_body={"enable_thinking": False},
             )
             return self._robust_json(res.choices[0].message.content)
         except Exception as e:
@@ -325,6 +326,7 @@ class GB2760Service:
                 model=API_CONFIG["model"],
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
+                extra_body={"enable_thinking": False},
             )
             parsed = self._robust_json(res.choices[0].message.content) or {}
             target_code = parsed.get("target_code")
@@ -427,6 +429,7 @@ ORDER BY size(ancestor.code) DESC
                 model=API_CONFIG["model"],
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
+                extra_body={"enable_thinking": False},
             )
             content = (res.choices[0].message.content or "").strip()
 
